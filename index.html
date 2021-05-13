@@ -263,6 +263,9 @@
                 font-size: 160%;
                 position: relative;
                 top: 5px;
+                box-shadow: 3px 3px 6px grey;
+                border: 3px black solid;
+                border-radius: 5px;
             }
             .submit-button{
                 position: relative;
@@ -274,6 +277,14 @@
                 color: white;           
                 font-size: 130%; 
                 border-radius: 20px;
+                box-shadow: 3px 3px 6px grey;
+                transition-property: all;
+                transition-delay: 0s;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+            .submit-button:hover{
+                transform: scale(1.1,1.1);
             }
             #Reviews{
                 clear: both;
@@ -286,9 +297,28 @@
                 
             }
             #footer{
-                height: 50%;
+                height: 13%;
                 background-color: maroon;
+                color: white;
             }
+            .terms{
+                color: white;
+            }
+            .terms:hover{
+                color: gold;
+            }
+           .icon{
+               width: 1.5%;
+               margin-left: 9px;
+               margin-top: 9px;
+               transition-property: all;
+               transition-delay: 0s;
+               transition-duration: 0.4s;
+               transition-timing-function: ease-in-out;
+           }
+           .icon:hover{
+               transform: scale(1.5,1.5);
+           }
             
 
 
@@ -428,7 +458,7 @@
             </div>
         </div>
         <div style="clear: both;"> 
-            <p class="Section_name">Enter your review</p>
+            <p class="Section_name">Your review</p>
             <form>
                 <p >
                 <input type="text" id="Your_Name" placeholder="Your Name" class="input"></p>
@@ -449,7 +479,16 @@
             </form>
         </div>
         <div id="footer">
-
+                <div class="footer1">©2021 Dining Delight. All Rights Reserved</div>
+                <div class="footer2">
+                    <a href="" class="terms" target="_blank"> Privacy Policy</a>| <a href="" class="terms" target="_blank"> Legal General</a>| <a href="" class="terms" target="_blank">Terms and Conditions</a>
+                </div>
+                <div class="footer3">
+                    Connect with us  <a href="https://www.facebook.com/" target="_blank"><img src="img/fb icon.png" class="icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/insta icon.jpg" class="icon"></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/twitter icon.png" class="icon"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="img/linkedin logo.png" class="icon"></a>
+                </div>
         </div>
     </body>
 </html>
