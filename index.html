@@ -147,6 +147,7 @@
                 transition-timing-function: ease-out;
                 border-radius: 10px;
                 z-index: 1;
+                opacity: 0.9;
 
             }
             .card:hover{
@@ -196,19 +197,24 @@
                 border: 2px grey solid;
                 box-shadow:0 2px 5px grey;
                 font-family: 'Girassol', cursive;
-                border-radius: 4px;
+                border-radius: 30px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius:0px ;
                 transition-property:all;
                 transition-duration: .5s;
                 transition-delay: 0s;
             }
             .magnify-glass{
                 display: inline-block;
-                width: 4.3%;
+                width: 3.7rem;
                 border: 2px grey solid;
                 box-shadow:0 2px 5px grey;
-                border-radius: 4px;
+                border-radius: 30px;
                 position:relative;
-                transform: translateY(13px);
+                transform: translateY(14.5px);
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+
             }
             .magnify-glass:hover{
                 box-shadow:0 5px 10px grey;
@@ -227,13 +233,12 @@
             }
             #Recommendation{
                 height: 60px;
-                position: relative;
                 top: 500px;
             }
             .review-card{
                 float: left;
                 width: 350px;
-                background-color: rgba(87, 87, 175, 0.329);
+                background-color: rgba(87, 87, 175, 0.7);
                 margin-left: 100px;
                 margin-top: 50px;
                 margin-bottom: 50px;
@@ -293,8 +298,7 @@
             .radio-btn{
                 position: relative;
                 left: 15%;
-                margin: 10px;
-                
+                margin: 10px;               
             }
             #footer{
                 height: 13%;
@@ -318,6 +322,23 @@
            }
            .icon:hover{
                transform: scale(1.5,1.5);
+           }
+           .Reco{
+               clear:both;
+               background-image: url(Img/bg1.jpg);
+               background-size: contain;
+               height: 250%;
+           }
+           .Special{
+               clear: both;
+               background-image: url(Img/bg4.jpg);
+               background-size: contain;
+               height: 110%;
+           }
+           .Review{
+               clear: both;
+               background-image: url(Img/bg3.jpg);
+               background-size: contain;
            }
             
 
@@ -344,7 +365,7 @@
             <div class="intro-subtitle"><h1>Where food speaks with your palate</h1></div>
             <a href="#Specialities" class="btn btn-maroon">Check Our Specialities</a>
         </div>
-        <div>
+        <div class="Special">
             <div id="Specialities"></div>
             <p class="Section_name">Our Specialities</p>
             <div>
@@ -375,13 +396,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div id="Recommendation">.</div>
+        <div class="Reco">
+            <div id="Recommendation"></div>
             <p class="Section_name">Recommendation</p>
             
             <div class="search-bar">
                 <input type="search" class="search-input" placeholder="Search">
-                <a href=""><img src="Img/search.png" class="magnify-glass"></a>
+                <a href=""><img src="img/search.png" class="magnify-glass"></a>
             </div>
             <div>
                 <div class="card" >
@@ -436,7 +457,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="Review">
             <div id="Reviews">.</div>
             <p class="Section_name">Reviews</p>
             <div>
@@ -456,8 +477,7 @@
                     <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>   
             </div>
-        </div>
-        <div style="clear: both;"> 
+            <div style="clear: both;"> 
             <p class="Section_name">Your review</p>
             <form>
                 <p >
@@ -477,6 +497,7 @@
                     <input type="submit" class="submit-button">
                 </p>
             </form>
+            </div>
         </div>
         <div id="footer">
                 <div class="footer1">©2021 Dining Delight. All Rights Reserved</div>
