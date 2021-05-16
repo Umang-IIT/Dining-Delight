@@ -1,548 +1,518 @@
+  
 <html>
-   <head> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-       <style type="text/css">
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            body{
-                font-family: 'Girassol', cursive;
-                padding: 0px;
-                background-color: #F0F4FB;
-            }
-
-            html{
-                scroll-behavior: smooth;
-            }
-
-            .heading{
-                float: right;
-                width: 10rem;
-                height: 5rem;
-                border-right: rgb(156, 51, 156) 0.1rem solid;
-                text-align: center;
-                padding-top: 1rem;
-                color: maroon;
-                position: sticky;
-                top: 0;
-                z-index: 100;
-                font-size: 120%;
-                
-            }
-            .heading :hover{
-                color: #FBBC05;
-                text-decoration: overline maroon;
-                display: inline block;
-            }
-            a{
-                text-decoration: none;
-                color: maroon;
-            }
-            .chef_logo{
-                height: 5rem;
-                float: left;
-                padding: 0 0 1rem 1rem;
-            }
-            .Restaurent_Name{
-                color: maroon;
-                font-size: 200%;
-                float: left;
-                text-align: center;
-                height:8rem ;
-                margin-left: 1rem;
-            }
-            .intro-img{
-                background-image: linear-gradient(to right bottom,rgba(252, 11, 11, 0.479),maroon), url(Img/intro\ page.jpg);
-                background-size: contain;
-                height: 90%;
-                clip-path: polygon(0 0,70% 0,30% 100%,0 100%);
-                z-index: 0;
-                animation: lefttoright 1s ease-out;
-            }
-            .intro-heading{
-                display: block;
-                position: absolute;
-                left: 70%;
-                top: 20%;
-                font-size: 2.5rem;
-                animation: righttoleft 1s ease-out;
-            }
-            .intro-subtitle{
-                display: block;
-                position: absolute;
-                left: 70%;
-                top: 60%;
-                font-size: 1.5rem;
-                animation: righttoleft 1s ease-out;
-
-            }
-            .Section_name{
-                color: maroon;
-                text-decoration: underline;
-                font-size: 200%;
-                text-align: center;
-                padding-top: 3rem;
-                clear: both;
-                }
-
-            .btn-maroon{
-                background-color: maroon ;
-                position: absolute;
-                left: 70%;
-                top: 80%;
-                color: white;
-                font-size: 150%;
-                padding: 1rem;
-                border-radius: 10rem;
-                animation: righttoleft 1s ease-out;
-                box-shadow: 0.7rem 0.7rem 0.5rem grey;
-            }
-            
-            .btn-maroon:hover{
-                transform: translateY(0.5rem);
-                box-shadow:0 1rem 2rem grey ;
-            }
-
-            .btn-maroon:active{
-                transform: translateY(0.2rem);
-                box-shadow: 0 1rem 0.5rem grey;
-            }
-
-            @keyframes lefttoright{
-                0%{
-                    transform: translateX(-10rem);
-                }
-                100%{
-                    transform: translateX(0);
-                }
-            }
-
-            @keyframes righttoleft{
-                0%{
-                    transform: translateX(4rem);
-                }
-                100%{
-                    transform: translateX(0);
-                }
-            }
-
-            .card{
-                float: left;
-                width: 23rem;
-                background-color: #FFBA30;
-                margin-left: 7rem;
-                margin-top: 5rem;
-                margin-bottom: 3rem;
-                padding: 10px;
-                color: maroon;
-                font-size: 140%;
-                box-shadow: 5px 5px 15px grey;
-                height:30.5rem;
-                transition-duration: 0.5s;
+    <head> 
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+        <style type="text/css">
+             *{
+                 margin: 0;
+                 padding: 0;
+                 box-sizing: border-box;
+             }
+ 
+             body{
+                 font-family: 'Girassol', cursive;
+                 padding: 0px;
+                 background-color: #F0F4FB;
+             }
+ 
+             html{
+                 scroll-behavior: smooth;
+             }
+ 
+             .heading{
+                 float: right;
+                 width: 10rem;
+                 height: 5rem;
+                 border-right: rgb(156, 51, 156) 0.1rem solid;
+                 text-align: center;
+                 padding-top: 1rem;
+                 color: maroon;
+                 position: sticky;
+                 top: 0;
+                 z-index: 100;
+                 font-size: 120%;
+                 
+             }
+             .heading :hover{
+                 color: #FBBC05;
+                 text-decoration: overline maroon;
+                 display: inline block;
+             }
+             a{
+                 text-decoration: none;
+                 color: maroon;
+             }
+             .chef_logo{
+                 height: 5rem;
+                 float: left;
+                 padding: 0 0 1rem 1rem;
+             }
+             .Restaurent_Name{
+                 color: maroon;
+                 font-size: 200%;
+                 float: left;
+                 text-align: center;
+                 height:8rem ;
+                 margin-left: 1rem;
+             }
+             .intro-img{
+                 background-image: linear-gradient(to right bottom,rgba(252, 11, 11, 0.479),maroon), url(Img/intro\ page.jpg);
+                 background-size: contain;
+                 height: 90%;
+                 clip-path: polygon(0 0,70% 0,30% 100%,0 100%);
+                 z-index: 0;
+                 animation: lefttoright 1s ease-out;
+             }
+             .intro-heading{
+                 display: block;
+                 position: absolute;
+                 left: 70%;
+                 top: 20%;
+                 font-size: 2.5rem;
+                 animation: righttoleft 1s ease-out;
+             }
+             .intro-subtitle{
+                 display: block;
+                 position: absolute;
+                 left: 70%;
+                 top: 60%;
+                 font-size: 1.5rem;
+                 animation: righttoleft 1s ease-out;
+ 
+             }
+             .Section_name{
+                 color: maroon;
+                 text-decoration: underline;
+                 font-size: 200%;
+                 text-align: center;
+                 padding-top: 3rem;
+                 clear: both;
+                 }
+ 
+             .btn-maroon{
+                 background-color: maroon ;
+                 position: absolute;
+                 left: 70%;
+                 top: 80%;
+                 color: white;
+                 font-size: 150%;
+                 padding: 1rem;
+                 border-radius: 10rem;
+                 animation: righttoleft 1s ease-out;
+                 box-shadow: 0.7rem 0.7rem 0.5rem grey;
+             }
+             
+             .btn-maroon:hover{
+                 transform: translateY(0.5rem);
+                 box-shadow:0 1rem 2rem grey ;
+             }
+ 
+             .btn-maroon:active{
+                 transform: translateY(0.2rem);
+                 box-shadow: 0 1rem 0.5rem grey;
+             }
+ 
+             @keyframes lefttoright{
+                 0%{
+                     transform: translateX(-10rem);
+                 }
+                 100%{
+                     transform: translateX(0);
+                 }
+             }
+ 
+             @keyframes righttoleft{
+                 0%{
+                     transform: translateX(4rem);
+                 }
+                 100%{
+                     transform: translateX(0);
+                 }
+             }
+ 
+             .card{
+                 float: left;
+                 width: 23rem;
+                 background-color: #FFBA30;
+                 margin-left: 7rem;
+                 margin-top: 5rem;
+                 margin-bottom: 3rem;
+                 padding: 10px;
+                 color: maroon;
+                 font-size: 140%;
+                 box-shadow: 5px 5px 15px grey;
+                 height:30.5rem;
+                 transition-duration: 0.5s;
+                 transition-property: all;
+                 transition-delay: 0;
+                 transition-timing-function: ease-out;
+                 border-radius: 10px;
+                 z-index: 1;
+                 opacity: 0.9;
+ 
+             }
+             .card:hover{
+                 box-shadow: 10px 10px 20px grey;
+                 transform: scale(1.05,1.05);
+                 opacity: 1;
+             }
+             .card_image{
+                 width: 100%;
+             }
+             .veg-logo{
+                 width:10%;
+                 float: right;
+                 margin: 0.3rem;
+             }
+ 
+             .info-para{
+                 font-size: 80%;
+                 text-align: justify;
+                 margin-top: 1.4rem;
+ 
+             }
+ 
+             .add-btn{
+                 background-color: white ;
+                 border: 1px maroon solid;
+                 padding: 0.2rem 1rem 0.2rem 1rem;
+                 border-radius: 2rem;
+                 position: relative;
+                 top: 0.2rem;
+             }
+ 
+             .add-btn:hover{
+                 background-color: maroon;
+                 color: white;
+ 
+             }
+             .add-btn:focus{
+                 background-color: maroon;
+                 color: white;
+             }
+             .search-bar{
+                 text-align: center;
+                 margin: 3rem;
+             }
+             .search-input{
+                 font-size: 2.5rem;
+                 width:50%;
+                 border: 2px grey solid;
+                 box-shadow:0 2px 5px grey;
+                 font-family: 'Girassol', cursive;
+                 border-radius: 30px;
+                 border-top-right-radius: 0px;
+                 border-bottom-right-radius:0px ;
+                 transition-property:all;
+                 transition-duration: .5s;
+                 transition-delay: 0s;
+             }
+             .clearfix::after {
+                 content: "";
+                 clear: both;
+                 display: table;
+             }
+             .magnify-glass{
+                 display: inline-block;
+                 width: 3.7rem;
+                 border: 2px grey solid;
+                 box-shadow:0 2px 5px grey;
+                 border-radius: 30px;
+                 position:relative;
+                 transform: translate(-1.5rem,14.5px);
+                 border-top-left-radius: 0px;
+                 border-bottom-left-radius: 0px;
+                 height: 3.8rem;
+             }
+             .magnify-glass:hover{
+                 box-shadow:0 5px 10px grey;
+             
+             }
+             .search-input:hover{                
+                 box-shadow:0 5px 10px grey;
+                 width:70%;
+             }
+             .search-input:active{                
+                 box-shadow:0 5px 10px grey;
+                 width:70%;
+             }
+             #Specialities{
+                 height: 4rem;
+             }
+             #Recommendation{
+                 height: 60px;
+                 top: 500px;
+             }
+             .review-card{
+                 float: left;
+                 width: 23rem;
+                 background-color: rgba(87, 87, 175, 0.7);
+                 margin-left: 7rem;
+                 margin-top: 4rem;
+                 margin-bottom: 3.6rem;
+                 padding: 0.6rem;
+                 font-size: 150%;
+                 transition-duration: 0.5s;
+                 transition-property: all;
+                 transition-delay: 0;
+                 transition-timing-function: ease-out;
+                 border-radius: 1rem;
+                 z-index: 1;
+                 box-shadow: 5px 5px 10px grey;
+             }
+             .review-card:hover{
+                 transform: scale(1.05,1.05);
+                 background-color: rgba(87, 87, 175, 1);
+             }
+             .user-img{
+                 width: 20%;
+                 float: right;
+                 margin: 10px;
+             }
+             
+             .input{
+                 width: 70%;
+                 margin-top: 2%;
+                 margin-left: 15%;
+                 font-size: 160%;
+                 position: relative;
+                 top: 5px;
+                 box-shadow: 3px 3px 6px grey;
+                 border: 3px black solid;
+                 border-radius: 5px;
+             }
+             .submit-button{
+                 position: relative;
+                 left: 15%;
+                 margin: 1rem;
+                 width: 7%;
+                 height: 7%;   
+                 background-color: maroon;
+                 color: white;           
+                 font-size: 130%; 
+                 border-radius: 2rem;
+                 box-shadow: 3px 3px 6px grey;
+                 transition-property: all;
+                 transition-delay: 0s;
+                 transition-duration: 0.3s;
+                 transition-timing-function: ease-in-out;
+             }
+             .submit-button:hover{
+                 transform: scale(1.1,1.1);
+             }
+             #Reviews{
+                 clear: both;
+                 height: 50px;
+             }
+             .radio-btn{
+                 position: relative;
+                 left: 15%;
+                 margin: 10px;               
+             }
+             #footer{
+                 height: 13%;
+                 background-color: maroon;
+                 color: white;
+             }
+             .terms{
+                 color: white;
+             }
+             .terms:hover{
+                 color: gold;
+             }
+            .icon{
+                width: 1.5%;
+                margin-left: 9px;
+                margin-top: 9px;
                 transition-property: all;
-                transition-delay: 0;
-                transition-timing-function: ease-out;
-                border-radius: 10px;
-                z-index: 1;
-                opacity: 0.9;
-
-            }
-            .card:hover{
-                box-shadow: 10px 10px 20px grey;
-                transform: scale(1.05,1.05);
-                opacity: 1;
-            }
-            .card_image{
-                width: 100%;
-            }
-            .veg-logo{
-                width:10%;
-                float: right;
-                margin: 0.3rem;
-            }
-
-            .info-para{
-                font-size: 80%;
-                text-align: justify;
-                margin-top: 1.4rem;
-
-            }
-
-            .add-btn{
-                background-color: white ;
-                border: 1px maroon solid;
-                padding: 0.2rem 1rem 0.2rem 1rem;
-                border-radius: 2rem;
-                position: relative;
-                top: 0.2rem;
-            }
-
-            .add-btn:hover{
-                background-color: maroon;
-                color: white;
-
-            }
-            .add-btn:focus{
-                background-color: maroon;
-                color: white;
-            }
-            .search-bar{
-                text-align: center;
-                margin: 3rem;
-            }
-            .search-input{
-                font-size: 2.5rem;
-                width:50%;
-                border: 2px grey solid;
-                box-shadow:0 2px 5px grey;
-                font-family: 'Girassol', cursive;
-                border-radius: 30px;
-                border-top-right-radius: 0px;
-                border-bottom-right-radius:0px ;
-                transition-property:all;
-                transition-duration: .5s;
                 transition-delay: 0s;
-            }
-            .clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-            .magnify-glass{
-                display: inline-block;
-                width: 3.7rem;
-                border: 2px grey solid;
-                box-shadow:0 2px 5px grey;
-                border-radius: 30px;
-                position:relative;
-                transform: translate(-1.5rem,14.5px);
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px;
-                height: 3.8rem;
-            }
-            .magnify-glass:hover{
-                box-shadow:0 5px 10px grey;
-            
-            }
-            .search-input:hover{                
-                box-shadow:0 5px 10px grey;
-                width:70%;
-            }
-            .search-input:active{                
-                box-shadow:0 5px 10px grey;
-                width:70%;
-            }
-            #Specialities{
-                height: 4rem;
-            }
-            #Recommendation{
-                height: 60px;
-                top: 500px;
-            }
-            .review-card{
-                float: left;
-                width: 23rem;
-                background-color: rgba(87, 87, 175, 0.7);
-                margin-left: 7rem;
-                margin-top: 4rem;
-                margin-bottom: 3.6rem;
-                padding: 0.6rem;
-                font-size: 150%;
-                transition-duration: 0.5s;
-                transition-property: all;
-                transition-delay: 0;
-                transition-timing-function: ease-out;
-                border-radius: 1rem;
-                z-index: 1;
-                box-shadow: 5px 5px 10px grey;
-            }
-            .review-card:hover{
-                transform: scale(1.05,1.05);
-                background-color: rgba(87, 87, 175, 1);
-            }
-            .user-img{
-                width: 20%;
-                float: right;
-                margin: 10px;
-            }
-            
-            .input{
-                width: 70%;
-                margin-top: 2%;
-                margin-left: 15%;
-                font-size: 160%;
-                position: relative;
-                top: 5px;
-                box-shadow: 3px 3px 6px grey;
-                border: 3px black solid;
-                border-radius: 5px;
-            }
-            .submit-button{
-                position: relative;
-                left: 15%;
-                margin: 1rem;
-                width: 7%;
-                height: 7%;   
-                background-color: maroon;
-                color: white;           
-                font-size: 130%; 
-                border-radius: 2rem;
-                box-shadow: 3px 3px 6px grey;
-                transition-property: all;
-                transition-delay: 0s;
-                transition-duration: 0.3s;
+                transition-duration: 0.4s;
                 transition-timing-function: ease-in-out;
-                display: inline;
             }
-            .submit-button:hover{
-                transform: scale(1.1,1.1);
+            .icon:hover{
+                transform: scale(1.5,1.5);
             }
-            #Reviews{
+            .Reco{
+                clear:both;
+                background-image: url(Img/bg1.jpg);
+                background-size: contain;
+                height: 220%;
+            }
+            .Special{
                 clear: both;
-                height: 50px;
+                background-image: url(Img/bg4.jpg);
+                background-size: contain;
+                height: 110%;
             }
-            .radio-btn{
-                position: relative;
-                left: 15%;
-                margin: 10px;               
+            .Review{
+                clear: both;
+                background-image: url(Img/bg3.jpg);
+                background-size: contain;
             }
-            #footer{
-                height: 13%;
-                background-color: maroon;
-                color: white;
-            }
-            .terms{
-                color: white;
-            }
-            .terms:hover{
-                color: gold;
-            }
-           .icon{
-               width: 1.5%;
-               margin-left: 9px;
-               margin-top: 9px;
-               transition-property: all;
-               transition-delay: 0s;
-               transition-duration: 0.4s;
-               transition-timing-function: ease-in-out;
-           }
-           .icon:hover{
-               transform: scale(1.5,1.5);
-           }
-           .Reco{
-               clear:both;
-               background-image: url(Img/bg1.jpg);
-               background-size: contain;
-               height: 220%;
-           }
-           .Special{
-               clear: both;
-               background-image: url(Img/bg4.jpg);
-               background-size: contain;
-               height: 110%;
-           }
-           .Review{
-               clear: both;
-               background-image: url(Img/bg3.jpg);
-               background-size: contain;
-               height: 160%;
-           }
-           .arrow{
-               clear: both;
-               display: block;
-               width: 4%;
-               margin-left: auto;
-               border-radius: 2.5rem;
-               box-shadow: 0.5rem 0.5rem 1rem grey;
-               background-color: rgba(128, 0, 0, 0.849);
-               margin-right: 1rem;
-               margin-bottom: 1rem;
-           } 
-           .arrow:hover{
-                animation: shake 0.6s infinite alternate;
-                animation-timing-function: ease-out;
-                background-color: yellow;
-           }
-
-           @keyframes shake{
-            0%{
-                transform: rotate(20deg);
-            }
-            50%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(-20deg);
-            }
-            
-           }
-
-
-    </style>
-       <title>
-        Dining Delight-Home
-        </title>
-    </head>
-    <body>
-        <header  style="border-bottom: brown 4px solid; height: 80px; padding-bottom: 2px;position: sticky;top: 0; z-index: 100; background-color: white;">
-            <img src="Img/chef logo.jpg" class="chef_logo" alt="Logo">
-            <div class="Restaurent_Name">Dining Delight</div>
-            <div class="heading"><a href="#Reviews">&nbsp;Reviews&nbsp;&nbsp; </a></div>
-            <div class="heading"><a href="#Recommendation"> Our Recommendations&nbsp;&nbsp;</a></div>
-            <div class="heading"><a href="#Specialities">&nbsp;Specialities&nbsp;&nbsp;</a></div>
-            <div class="heading"><a href="#Intro">Intro&nbsp;&nbsp;</a></div>
-        </header>
-
-        <div>
-            <div  id="Intro" class="intro-img"></div>
-
-            <div class="intro-heading"><h1>Dining Delight</h1></div>
-            <div class="intro-subtitle"><h1>Where food speaks with your palate</h1></div>
-            <a href="#Specialities" class="btn btn-maroon">Check Our Specialities</a>
-        </div>
-        <div class="Special">
-            <div id="Specialities"></div>
-            <p class="Section_name">Our Specialities</p>
-            <div>
-                <div class="card" >
-                    <img src="Img/Sandwich.JPG" class="card_image">
-                    Cheesy Baked Open Sandwich
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Delish on these crispy fried tikkis stuffed with a filling of spinach, corn kernels and served with a mint chutney on the side!</p>
-                    <div><a href="" class="add-btn" target="_blank">ADD +</a></div>
-                    <p style="float: right;">₹99</p>
-                </div>
-                <div class="card">
-                    <img src="Img/Machhli.jpg" class="card_image">
-                    Nimbu-Makhmali-Machhli
-                    <img src="Img/non-veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Tender hand-made croquettes of fish (double marinated) are oven-roasted to give a delectable flavour to the fish and turn it into a lip-smacking dish. A mint chutney on the side, adds a delicious zing to this brilliant appetizer.</p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹279</p>
-                </div>
-                <div class="card">
-                    <img src="Img/Chilli Corn.JPG" class="card_image">
-                    Chilli-Corn
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">A veggie twist on an indian favourite! Relish these spicy deep-fried sweet corn tossed in a masala of chilli, mustard seeds, curry leaves, coriander leaves and african peri-peri seasoning. This is snacky heaven!
-                    </p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹179</p>
-                </div>
-            </div>
-        </div>
-        <div class="Reco">
-            <div id="Recommendation"></div>
-            <p class="Section_name">Recommendation</p>
-            
-            <div class="search-bar clearfix">
-                <input type="search" class="search-input" placeholder="Search">
-                <a href=""><img src="Img/search.png" class="magnify-glass"></a>
-            </div>
-            <div>
-                <div class="card" >
-                    <img src="Img/Sandwich.JPG" class="card_image">
-                    Cheesy Baked Open Sandwich
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Delish on these crispy fried tikkis stuffed with a filling of spinach, corn kernels and served with a mint chutney on the side!</p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹99</p>
-                </div>
-                <div class="card">
-                    <img src="Img/Machhli.jpg" class="card_image">
-                    Nimbu-Makhmali-Machhli
-                    <img src="Img/non-veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Tender hand-made croquettes of fish (double marinated) are oven-roasted to give a delectable flavour to the fish and turn it into a lip-smacking dish. A mint chutney on the side, adds a delicious zing to this brilliant appetizer.</p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹279</p>
-                </div>
-                <div class="card">
-                    <img src="Img/Chilli Corn.JPG" class="card_image">
-                    Chilli-Corn
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">A veggie twist on an indian favourite! Relish these spicy deep-fried sweet corn tossed in a masala of chilli, mustard seeds, curry leaves, coriander leaves and african peri-peri seasoning. This is snacky heaven!
-                    </p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹179</p>
-                </div>
-                <div class="card" >
-                    <img src="Img/penne alfredo.jpg" class="card_image">
-                    Penne Alfredo
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Penne pasta tossed in a luscious alfredo sauce along with veggies, finished off with fresh parsley and grated cheese. Bring out the Kid-in-You! All our meals are prepared fresh on order.</p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹219</p>
-                </div>
-                <div class="card">
-                    <img src="Img/chicken sandwich.jpg" class="card_image">
-                    Chicken 'n' Cheese Sandwich
-                    <img src="Img/non-veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">Shredded chicken, seasoned with sauces, seasonings and cheese, between toasted, chipotle mayo spread brown bread slices is all that you would need for a scrumptious anytime-meal. Trust us, you'll love it.</p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹139</p>
-                </div>
-                <div class="card">
-                    <img src="Img/mini fruit parfait.jpg" class="card_image">
-                    Mini Fruit Parfait
-                    <img src="Img/veg-logo.jpg" class="veg-logo">
-                    <p class="info-para">This power-packed parfait has all the nutrition you need. Loaded with vitamins and antioxidants from a variety of fruits, healthy fibre from muesli and probiotics from the yogurt, this little cup of goodness is a must-have in your menu for the day.
-                    </p>
-                    <a href="" class="add-btn" target="_blank">ADD +</a>
-                    <p style="float: right;">₹79</p>
-                </div>
-            </div>
-        </div>
-        <div class="Review">
-            <div id="Reviews">.</div>
-            <p class="Section_name">Reviews</p>
-            <div>
-                <div class="review-card">
-                        Ankur Jain
-                        <img src="Img/user-ico.png" class="user-img">
-                        <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="review-card">
-                    Disha Singla
-                    <img src="Img/user-ico.png" class="user-img">
-                    <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+             
+ 
+ 
+     </style>
+        <title>
+         Dining Delight-Home
+         </title>
+     </head>
+     <body>
+         <header  style="border-bottom: brown 4px solid; height: 80px; padding-bottom: 2px;position: sticky;top: 0; z-index: 100; background-color: white;">
+             <img src="Img/chef logo.jpg" class="chef_logo" alt="Logo">
+             <div class="Restaurent_Name">Dining Delight</div>
+             <div class="heading"><a href="#Reviews">&nbsp;Reviews&nbsp;&nbsp; </a></div>
+             <div class="heading"><a href="#Recommendation"> Our Recommendations&nbsp;&nbsp;</a></div>
+             <div class="heading"><a href="#Specialities">&nbsp;Specialities&nbsp;&nbsp;</a></div>
+             <div class="heading"><a href="#Intro">Intro&nbsp;&nbsp;</a></div>
+         </header>
+ 
+         <div>
+             <div  id="Intro" class="intro-img"></div>
+ 
+             <div class="intro-heading"><h1>Dining Delight</h1></div>
+             <div class="intro-subtitle"><h1>Where food speaks with your palate</h1></div>
+             <a href="#Specialities" class="btn btn-maroon">Check Our Specialities</a>
+         </div>
+         <div class="Special">
+             <div id="Specialities"></div>
+             <p class="Section_name">Our Specialities</p>
+             <div>
+                 <div class="card" >
+                     <img src="Img/Sandwich.JPG" class="card_image">
+                     Cheesy Baked Open Sandwich
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Delish on these crispy fried tikkis stuffed with a filling of spinach, corn kernels and served with a mint chutney on the side!</p>
+                     <div><a href="" class="add-btn" target="_blank">ADD +</a></div>
+                     <p style="float: right;">₹99</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/Machhli.jpg" class="card_image">
+                     Nimbu-Makhmali-Machhli
+                     <img src="Img/non-veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Tender hand-made croquettes of fish (double marinated) are oven-roasted to give a delectable flavour to the fish and turn it into a lip-smacking dish. A mint chutney on the side, adds a delicious zing to this brilliant appetizer.</p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹279</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/Chilli Corn.JPG" class="card_image">
+                     Chilli-Corn
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">A veggie twist on an indian favourite! Relish these spicy deep-fried sweet corn tossed in a masala of chilli, mustard seeds, curry leaves, coriander leaves and african peri-peri seasoning. This is snacky heaven!
+                     </p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹179</p>
+                 </div>
+             </div>
+         </div>
+         <div class="Reco">
+             <div id="Recommendation"></div>
+             <p class="Section_name">Recommendation</p>
+             
+             <div class="search-bar clearfix">
+                 <input type="search" class="search-input" placeholder="Search">
+                 <a href=""><img src="Img/search.png" class="magnify-glass"></a>
+             </div>
+             <div>
+                 <div class="card" >
+                     <img src="Img/Sandwich.JPG" class="card_image">
+                     Cheesy Baked Open Sandwich
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Delish on these crispy fried tikkis stuffed with a filling of spinach, corn kernels and served with a mint chutney on the side!</p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹99</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/Machhli.jpg" class="card_image">
+                     Nimbu-Makhmali-Machhli
+                     <img src="Img/non-veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Tender hand-made croquettes of fish (double marinated) are oven-roasted to give a delectable flavour to the fish and turn it into a lip-smacking dish. A mint chutney on the side, adds a delicious zing to this brilliant appetizer.</p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹279</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/Chilli Corn.JPG" class="card_image">
+                     Chilli-Corn
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">A veggie twist on an indian favourite! Relish these spicy deep-fried sweet corn tossed in a masala of chilli, mustard seeds, curry leaves, coriander leaves and african peri-peri seasoning. This is snacky heaven!
+                     </p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹179</p>
+                 </div>
+                 <div class="card" >
+                     <img src="Img/penne alfredo.jpg" class="card_image">
+                     Penne Alfredo
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Penne pasta tossed in a luscious alfredo sauce along with veggies, finished off with fresh parsley and grated cheese. Bring out the Kid-in-You! All our meals are prepared fresh on order.</p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹219</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/chicken sandwich.jpg" class="card_image">
+                     Chicken 'n' Cheese Sandwich
+                     <img src="Img/non-veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">Shredded chicken, seasoned with sauces, seasonings and cheese, between toasted, chipotle mayo spread brown bread slices is all that you would need for a scrumptious anytime-meal. Trust us, you'll love it.</p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹139</p>
+                 </div>
+                 <div class="card">
+                     <img src="Img/mini fruit parfait.jpg" class="card_image">
+                     Mini Fruit Parfait
+                     <img src="Img/veg-logo.jpg" class="veg-logo">
+                     <p class="info-para">This power-packed parfait has all the nutrition you need. Loaded with vitamins and antioxidants from a variety of fruits, healthy fibre from muesli and probiotics from the yogurt, this little cup of goodness is a must-have in your menu for the day.
+                     </p>
+                     <a href="" class="add-btn" target="_blank">ADD +</a>
+                     <p style="float: right;">₹79</p>
+                 </div>
+             </div>
+         </div>
+         <div class="Review">
+             <div id="Reviews">.</div>
+             <p class="Section_name">Reviews</p>
+             <div>
+                 <div class="review-card">
+                         Ankur Jain
+                         <img src="Img/user-ico.png" class="user-img">
+                         <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                  </div>
                  <div class="review-card">
-                    Manish Malhotra
-                    <img src="Img/user-ico.png" class="user-img">
-                    <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>   
-            </div>
-            <div style="clear: both;"> 
-            <p class="Section_name">Your review</p>
-            <form>
-                <p >
-                <input type="text" id="Your_Name" placeholder="Your Name" class="input"></p>
-                <p >
-                <input type="text" id="email" placeholder="Enter your email" class="input"></p>
-                <p >
-                <textarea type="text" placeholder="Enter your valuable comments" class="input" style="height: 20%; "></textarea></p>
-                <p>
-                    <input type="submit" class="submit-button">
-                </p>
-            </form>
-            </div>
-            <div><a href="#Intro"><img src="Img/arrow.png" class="arrow"></a></div>
-        </div>
-        <div id="footer">
-                <div class="footer1">©2021 Dining Delight. All Rights Reserved</div>
-                <div class="footer2">
-                    <a href="" class="terms" target="_blank"> Privacy Policy</a>| <a href="" class="terms" target="_blank"> Legal General</a>| <a href="" class="terms" target="_blank">Terms and Conditions</a>
-                </div>
-                <div class="footer3">
-                    Connect with us  <a href="https://www.facebook.com/" target="_blank"><img src="Img/fb icon.png" class="icon"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="Img/insta icon.jpg" class="icon"></a>
-                    <a href="https://twitter.com/?lang=en" target="_blank"><img src="Img/twitter icon.png" class="icon"></a>
-                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="Img/linkedin logo.png" class="icon"></a>
-                </div>
-        </div>
-    </body>
-</html>
+                     Disha Singla
+                     <img src="Img/user-ico.png" class="user-img">
+                     <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  </div>
+                  <div class="review-card">
+                     Manish Malhotra
+                     <img src="Img/user-ico.png" class="user-img">
+                     <p style="font-size: 60%; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                 </div>   
+             </div>
+             <div style="clear: both;"> 
+             <p class="Section_name">Your review</p>
+             <form>
+                 <p >
+                 <input type="text" id="Your_Name" placeholder="Your Name" class="input"></p>
+                 <p >
+                 <input type="text" id="email" placeholder="Enter your email" class="input"></p>
+                 <p >
+                 <textarea type="text" placeholder="Enter your valuable comments" class="input" style="height: 20%; "></textarea></p>
+                 <p>
+                     <input type="submit" class="submit-button">
+                 </p>
+             </form>
+             </div>
+         </div>
+         <div id="footer">
+                 <div class="footer1">©2021 Dining Delight. All Rights Reserved</div>
+                 <div class="footer2">
+                     <a href="" class="terms" target="_blank"> Privacy Policy</a>| <a href="" class="terms" target="_blank"> Legal General</a>| <a href="" class="terms" target="_blank">Terms and Conditions</a>
+                 </div>
+                 <div class="footer3">
+                     Connect with us  <a href="https://www.facebook.com/" target="_blank"><img src="Img/fb icon.png" class="icon"></a>
+                     <a href="https://www.instagram.com/" target="_blank"><img src="Img/insta icon.jpg" class="icon"></a>
+                     <a href="https://twitter.com/?lang=en" target="_blank"><img src="Img/twitter icon.png" class="icon"></a>
+                     <a href="https://www.linkedin.com/feed/" target="_blank"><img src="Img/linkedin logo.png" class="icon"></a>
+                 </div>
+         </div>
+     </body>
+ </html
