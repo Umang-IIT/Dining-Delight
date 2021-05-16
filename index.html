@@ -296,6 +296,7 @@
                 transition-delay: 0s;
                 transition-duration: 0.3s;
                 transition-timing-function: ease-in-out;
+                display: inline;
             }
             .submit-button:hover{
                 transform: scale(1.1,1.1);
@@ -348,8 +349,37 @@
                clear: both;
                background-image: url(Img/bg3.jpg);
                background-size: contain;
+               height: 160%;
            }
+           .arrow{
+               clear: both;
+               display: block;
+               width: 4%;
+               margin-left: auto;
+               border-radius: 2.5rem;
+               box-shadow: 0.5rem 0.5rem 1rem grey;
+               background-color: rgba(128, 0, 0, 0.849);
+               margin-right: 1rem;
+               margin-bottom: 1rem;
+           } 
+           .arrow:hover{
+                animation: shake 0.6s infinite alternate;
+                animation-timing-function: ease-out;
+                background-color: yellow;
+           }
+
+           @keyframes shake{
+            0%{
+                transform: rotate(20deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-20deg);
+            }
             
+           }
 
 
     </style>
@@ -500,6 +530,7 @@
                 </p>
             </form>
             </div>
+            <div><a href="#Intro"><img src="Img/arrow.png" class="arrow"></a></div>
         </div>
         <div id="footer">
                 <div class="footer1">©2021 Dining Delight. All Rights Reserved</div>
