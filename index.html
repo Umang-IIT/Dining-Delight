@@ -60,10 +60,14 @@
             .intro-img{
                 background-image: linear-gradient(to right bottom,rgba(252, 11, 11, 0.479),maroon), url(Img/intro\ page.jpg);
                 background-size: contain;
-                height: 90%;
+                height: 100%;
                 clip-path: polygon(0 0,70% 0,30% 100%,0 100%);
                 z-index: 0;
                 animation: lefttoright 1s ease-out;
+            }
+            #hidden{
+                position: absolute;
+                height: 80px;
             }
             .intro-heading{
                 display: block;
@@ -391,22 +395,22 @@
         </title>
     </head>
     <body>
-        <header  style="overflow:hidden;border-bottom: brown 4px solid; height: 80px; padding-bottom: 2px;position: sticky;top: 0; z-index: 100; background-color: white;">
+        <header  style="border-bottom: brown 4px solid; height: 80px; padding-bottom: 2px;position: sticky;top: 0; z-index: 100; background-color: white;">
             <img src="Img/chef logo.jpg" class="chef_logo" alt="Logo">
             <div class="Restaurent_Name">Dining Delight</div>
             <div class="heading"><a href="#Reviews">&nbsp;Reviews&nbsp;&nbsp; </a></div>
             <div class="heading"><a href="#Recommendation"> Our Recommendations&nbsp;&nbsp;</a></div>
             <div class="heading"><a href="#Specialities">&nbsp;Specialities&nbsp;&nbsp;</a></div>
-            <div class="heading"><a href="#Intro">Intro&nbsp;&nbsp;</a></div>
+            <div class="heading"><a href="#hidden">Intro&nbsp;&nbsp;</a></div>
         </header>
+        <div id="hidden"></div>
 
-        <section id="Intro">
-            <div   class="intro-img"></div>
-
+        <div id="Intro">
+            <div class="intro-img"></div>
             <div class="intro-heading"><h1>Dining Delight</h1></div>
             <div class="intro-subtitle"><h1>Where food speaks with your palate</h1></div>
             <a href="#Specialities" class="btn btn-maroon">Check Our Specialities</a>
-        </section>
+        </div>
         <div class="Special">
             <div id="Specialities"></div>
             <p class="Section_name">Our Specialities</p>
